@@ -1,0 +1,75 @@
+/*reset simple*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+/*centrer toute la page*/
+body{
+	background: #f4f6f8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /*celui-ci me permet en faite d'utiliser align-items: center, 100vh veut dire 100% viewport height*/
+}
+
+/*conteneur principale */
+#container{
+	background: white;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	width: 300px;
+	text-align: center;
+}
+
+/*titre*/
+h1{
+	margin-bottom: 20px;
+	font-size: 20px;
+	color: #333;
+}
+
+/*zone inputs*/
+#inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+/*select*/
+select {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 14px;
+}
+/*bouton*/
+button {
+	padding: 10px;
+	border: none;
+	border-radius : 5px;
+	background: tomato;
+	color: white;
+	font-size: 14px;
+	cursor: pointer; /*le pointer devien une main avec index*/
+	transition:0.3s;
+}
+/*hover bouton*/
+button:hover {
+	background: #e5533d;
+}
+/*bouton désactivé*/
+button:disabled {
+	background: #ccc;
+	cursor: not-allowed; /*transforme le curseur en interdit 🚫*/
+}
+button:hover:not(disabled){
+	transform: translateY(-2px);
+}
+/*message*/
+#outputText {
+	margin-top: 15px;
+	font-weight: bold;
+	min-height: 50px;
+}
