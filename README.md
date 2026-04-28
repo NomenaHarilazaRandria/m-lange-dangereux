@@ -50,6 +50,10 @@ This project allows the user to select two products and instantly see whether th
 3. Click **Verify**
 4. Read the result message
 
+## ▶️ Live Demo
+
+**https://nomenaharilazarandria.github.io/m-lange-dangereux/**
+
 ## 🎯 Future Improvements
 
 - Add more household products
